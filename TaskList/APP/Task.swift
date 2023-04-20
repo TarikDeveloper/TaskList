@@ -1,8 +1,13 @@
 //
-//  Task.swift
-//  TaskList
+//  TaskListApp.swift
+//  Novo
 //
 //  Created by Tarik Villalobos on 20/04/23.
+//
+//  MARK: Social Media
+//  Instagram: tarik.developer
+//  GitHub: TarikDeveloper
+//  Gmail: tarik.developer1@gmail.com
 //
 
 import SwiftUI
