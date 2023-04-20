@@ -14,7 +14,7 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 HStack {
-                    TextField("Nova Tarefa", text: $taskList.newTask)
+                    TextField("My Tasks", text: $taskList.newTask)
                         .padding(.horizontal)
                     Button(action: {
                         taskList.addTask()
@@ -37,13 +37,13 @@ struct ContentView: View {
                 Button(action: {
                     taskList.removeCompletedTasks(atOffsets: IndexSet(taskList.tasks.indices.filter { taskList.tasks[$0].isCompleted }))
                 }) {
-                    Text("Excluir Tarefas Concluídas")
+                    Text("Delete Completed Tasks")
                 }
                 .padding(.top)
                 .foregroundColor(.red)
                 
             }
-            .navigationBarTitle("Minhas Tarefas")
+            .navigationBarTitle("My Tasks")
         }
     }
 }
